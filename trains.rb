@@ -30,16 +30,20 @@ train_to_chicago = trains[2][:direction]
 # puts eastbound
 
 
-def timetable(array, direction)
-  direction_train=[]
-  array.each do |item|
-    if item[:direction] == direction
-      direction_train.push item[:train]
-    end
-    end
-    return direction_train
+# def timetable(array, direction)
+#   direction_train=[]
+#   array.each do |item|
+#     if item[:direction] == direction
+#       direction_train.push item[:train]
+#     end
+#     end
+#     return direction_train
+#
+# end
+#
+# puts timetable(trains, "east")
+# puts timetable(trains, "north")
 
-end
+trains[0] [:first_departure_time] = 0600
 
-puts timetable(trains, "east")
-puts timetable(trains, "north")
+puts trains
